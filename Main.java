@@ -4,6 +4,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
     Queue<Cliente> q = new Queue<>();
+    Queue<Ticket> j = new Queue<>();
     
         Random rand = new Random();
 
@@ -40,9 +41,9 @@ public class Main {
         System.out.println(q.toString());
     }
 
-    
-
-    
+    Ticket t1 = new Ticket(c);
+    ListItem h = new ListItem(t1);
+    e.enqueue(h);
 
     
 

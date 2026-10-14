@@ -10,7 +10,7 @@ public class Ticket extends Thread {
 
     @Override 
     public void run(){
-        
+        System.out.println("Cliente");
     }
    
 }

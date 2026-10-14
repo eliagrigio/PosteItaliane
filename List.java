@@ -10,11 +10,11 @@ public class List<T> {
         this.tail = null;
     }
 
-    public ListItem getHead(){
+    public ListItem<T> getHead(){
         return this.head;
     }
 
-    public ListItem getTail(){
+    public ListItem<T> getTail(){
         return this.tail;
     }
    
