@@ -1,8 +1,6 @@
 
 import java.util.Random;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class Main {
     public static void main(String[] args) {
     Queue<Cliente> q = new Queue<>();
@@ -24,9 +22,7 @@ public class Main {
     Cliente d = new Cliente(r);
     Cliente e = new Cliente(b);
 
-    q.enqueue(c);
-    q.enqueue(d);
-    q.enqueue(e);
+     
     
 Ticket<Cliente> t1 = new Ticket(c);
     
@@ -55,7 +51,8 @@ Ticket<Cliente> t1 = new Ticket(c);
     
     
 
-    
+    Sportello s = new Sportello(j);
+    System.out.println(s.getQueue());
 
     
 }
