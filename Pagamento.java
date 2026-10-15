@@ -11,7 +11,7 @@ public class Pagamento {
 
     public int getValore(){return this.valore;}
     public String getmMittente(){return this.mittente;} 
-    public String getDestinatario(){return this.destinatario;} 
+    public String getDestinatario(){return this.destinatario;}  
     public String toString(){
         String res = this.getValore()+ " " + this.getmMittente()+ " " + this.getDestinatario();
 

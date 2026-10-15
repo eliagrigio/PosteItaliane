@@ -18,7 +18,7 @@ public class ListItem<T> {
     }
 
     public void setNext(ListItem<T> next){
-        this.next = next;
+        this.next = next; 
     }
 
     public ListItem<T> getNext(){

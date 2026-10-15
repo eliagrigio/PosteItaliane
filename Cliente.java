@@ -16,6 +16,6 @@ public class Cliente {
 
     public void setTipo(ListItem tipo){
         this.tipo = tipo;
-    }
+    } 
 
 }

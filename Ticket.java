@@ -1,4 +1,4 @@
-public class Ticket extends Thread {
+public class Ticket<Cliente> extends Thread {
 
     private Cliente cliente;
 
@@ -7,11 +7,14 @@ public class Ticket extends Thread {
         this.cliente = c;
     }
 
+    public Cliente getCliente(){
+        return this.cliente;
+    }
 
     @Override 
     public void run(){
-        System.out.println("Cliente");
+        System.out.println("Cliente Servito");
     }
    
-}
+} 
  

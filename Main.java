@@ -1,6 +1,8 @@
 
 import java.util.Random;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class Main {
     public static void main(String[] args) {
     Queue<Cliente> q = new Queue<>();
@@ -9,6 +11,7 @@ public class Main {
         Random rand = new Random();
 
     Finanziamento f = new Finanziamento(80, "ELIA", "GTA VI");
+    long time1 = System.currentTimeMillis();
     ListItem<Finanziamento> g = new ListItem<>(f);
 
     Pacco p = new Pacco("Gioco", 0, "Elia", "Beldea");
@@ -25,26 +28,31 @@ public class Main {
     q.enqueue(d);
     q.enqueue(e);
     
-    ListItem<Cliente> cur = q.getHead().getNext();
-    System.out.println(q.toString());
-    while(!q.isEmpty()){
+Ticket<Cliente> t1 = new Ticket(c);
+    
+    j.enqueue(t1);
+    
 
+    System.out.println(j.toString());
+    while(!j.isEmpty()){
+        int x = 500;
         try {
-            Thread.sleep(1000);
+            Thread.sleep(x);
+            time1 += x;
 
         } catch (InterruptedException e1) {
             System.out.println("Problema");
         }
+        j.getHead().getValue().start();
+        System.out.println(j.toString()) ;
+        j.dequeue();
+        System.out.println(j.toString()) ;
+        System.out.println("Evaso il numero 1 " + (time1-x));
+        System.out.println("Evaso il numero 1 " + time1);
         
-        q.dequeue();
-        
-        System.out.println(q.toString());
     }
 
-    Ticket t1 = new Ticket(c);
-    ListItem h = new ListItem(t1);
-    e.enqueue(h);
-
+    
     
 
     

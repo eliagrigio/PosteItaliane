@@ -11,7 +11,7 @@ public class Queue<T> extends List<T>{
     }
 
     public T dequeue(){
-        return  this.removeHead();
+        return  this.removeHead(); 
     }
 
     

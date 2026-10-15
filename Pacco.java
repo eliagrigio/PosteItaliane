@@ -11,7 +11,7 @@ public class Pacco {
         this.destinatario = destinatario;
     }
  
-
+ 
     public String getNome(){return this.nome;}
     public int getPeso(){return this.peso;}
     public String getMittente(){return this.mittente;}
