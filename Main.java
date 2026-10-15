@@ -9,7 +9,7 @@ public class Main {
         Random rand = new Random();
 
     Finanziamento f = new Finanziamento(80, "ELIA", "GTA VI");
-    long time1 = System.currentTimeMillis();
+    
     ListItem<Finanziamento> g = new ListItem<>(f);
 
     Pacco p = new Pacco("Gioco", 0, "Elia", "Beldea");
@@ -31,10 +31,10 @@ Ticket<Cliente> t1 = new Ticket(c);
 
     System.out.println(j.toString());
     while(!j.isEmpty()){
-        int x = 500;
+        long x = 500;
         try {
             Thread.sleep(x);
-            time1 += x;
+            x+= t1.getTempoInizile();
 
         } catch (InterruptedException e1) {
             System.out.println("Problema");
@@ -43,8 +43,8 @@ Ticket<Cliente> t1 = new Ticket(c);
         System.out.println(j.toString()) ;
         j.dequeue();
         System.out.println(j.toString()) ;
-        System.out.println("Evaso il numero 1 " + (time1-x));
-        System.out.println("Evaso il numero 1 " + time1);
+        System.out.println("Evaso il numero 1 " + x);
+        System.out.println("Evaso il numero 1 " + t1.getTempoInizile());
         
     }
 
