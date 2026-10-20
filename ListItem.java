@@ -5,7 +5,7 @@ public class ListItem<T> {
     private ListItem<T> next;  
     private ListItem<T> prev;
 
-
+ 
     
 
     public ListItem(T value){  

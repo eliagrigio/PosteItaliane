@@ -9,3 +9,4 @@ public class Sportello {
         return this.q; 
     }
 }
+ 

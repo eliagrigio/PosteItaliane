@@ -7,7 +7,7 @@ public class Pacco {
     public Pacco(String nome, int peso, String mittente, String destinatario){
         this.nome = nome; 
         this.peso = peso;
-        this.mittente = mittente;
+        this.mittente = mittente; 
         this.destinatario = destinatario;
     }
  

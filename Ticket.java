@@ -1,15 +1,15 @@
-public class Ticket<Cliente> extends Thread {
+public class Ticket<T> extends Thread {
 
-    private Cliente cliente;
+    private T cliente;
     private Long TempoIniziale;
 
 
-    public Ticket(Cliente c){
+    public Ticket(T c){
         this.cliente = c;
         this.TempoIniziale = System.currentTimeMillis();
     }
 
-    public Cliente getCliente(){
+    public T getCliente(){
         return this.cliente;
     }
 
@@ -19,7 +19,7 @@ public class Ticket<Cliente> extends Thread {
 
     @Override 
     public void run(){
-        System.out.println("Cliente Servito");
+        System.out.println("Cliente Servito"); 
     }
    
 } 

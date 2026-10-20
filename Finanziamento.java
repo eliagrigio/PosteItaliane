@@ -13,7 +13,7 @@ public class Finanziamento {
 
     public String getRichiedente() {return this.richiedente;}
 
-    public String getMotivazione() {return this.motivazione;} 
+    public String getMotivazione() {return this.motivazione;}  
 
     public String toString(){
         String res = this.getImporto() + " " + this.getRichiedente()+ " " + this.getMotivazione();

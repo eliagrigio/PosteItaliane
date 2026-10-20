@@ -7,7 +7,7 @@ public class Cliente {
 
     public ListItem getTipo(){
         return this.tipo;
-    } 
+    }  
 
     public String toString(){
         String res = this.tipo.toString();

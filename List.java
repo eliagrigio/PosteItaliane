@@ -6,7 +6,7 @@ public class List<T> {
 
     // Constructor
     protected List() { 
-        this.head = null;
+        this.head = null; 
         this.tail = null;
     }
 
