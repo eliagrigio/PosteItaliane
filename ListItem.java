@@ -9,7 +9,7 @@ public class ListItem<T> {
     
 
     public ListItem(T value){  
-        this.value = value;
+        this.value = value; 
         this.next = null; // non obbligatorio
     }
 

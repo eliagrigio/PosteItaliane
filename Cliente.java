@@ -3,7 +3,7 @@ public class Cliente {
 
     public Cliente(ListItem tipo){
         this.tipo = tipo;
-    }
+    } 
 
     public ListItem getTipo(){
         return this.tipo;

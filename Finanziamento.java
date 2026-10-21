@@ -6,7 +6,7 @@ public class Finanziamento {
     public Finanziamento(int importo, String richiedente, String motivazione) {
         this.importo = importo;
         this.richiedente = richiedente;
-        this.motivazione = motivazione;
+        this.motivazione = motivazione; 
     }
 
     public int getImporto() {return this.importo;} 

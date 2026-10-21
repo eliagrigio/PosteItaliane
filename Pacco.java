@@ -13,7 +13,7 @@ public class Pacco {
  
  
     public String getNome(){return this.nome;}
-    public int getPeso(){return this.peso;}
+    public int getPeso(){return this.peso;} 
     public String getMittente(){return this.mittente;}
     public String getDestinatario(){return this.destinatario;}
 
